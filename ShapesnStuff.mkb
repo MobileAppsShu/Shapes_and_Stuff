@@ -1,0 +1,59 @@
+#!/usr/bin/env mkb
+
+subprojects
+{
+	iw2d
+    iw2dscenegraphcore
+    iw2dscenegraph
+	iwtween
+	modules/SoundEngine
+}
+
+files
+{
+	[Source]
+    (Source)
+	ShapesnStuff.cpp
+	about.cpp
+	settings.cpp
+    input.cpp
+    mainMenu.cpp
+    resources.cpp
+    scene.cpp
+	audio.cpp
+	game.cpp
+	pauseMenu.cpp
+	gameoverMenu.cpp
+
+    input.h
+	about.h
+	settings.h
+    mainMenu.h
+    resources.h
+    scene.h
+	audio.h
+	game.h
+	pauseMenu.h
+	gameoverMenu.h
+}
+
+assets
+{
+    (data)
+	audio
+    textures
+    .
+}
+
+
+
+deployment
+{
+}
+
+#Hub deployment options, please do not add anything below this line
+subproject
+{
+    (.)
+    ShapesnStuff_deployment
+}
